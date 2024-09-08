@@ -23,88 +23,67 @@ const greeting = {
     intro: "Hello 👋, my name is",
     name: "Abhishek Rana",
     message: "I am a student at Graphic Era University with a major in Computer Science. I have a passion for computer programming and information technology. I have used computer programming since I was in grade school. This passion has given me the ability to develop programs for a multitude of things, including websites and programming languages.My other love is information technology. I have many plans to implement newer technologies in my life such as cloud computing, cyber security, and managed IT services.I am open to learning new things and getting involved with new projects that can help me learn or apply all that I have learned throughout my university career.",
-    basedLocation: "Uttarakhand,India 🇮🇳",
-    resumeLink: "https://drive.google.com/file/d/1v-RfKb815toFWFTlINoQQmt_Uh38BPg4/view?usp=drive_link", // recommended: google drive file share link (change to "anyone on the internet can view")
+    basedLocation: "Uttarakhand,INDIA 🇮🇳",
+    resumeLink: "https://drive.google.com/file/d/1ymZPlvYf2m52o-agILBHlfFKlfBdd-cb/view", 
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
     },
-    portraitLink: 'images/IMG_2785 copy.jpeg'
+    portraitLink: 'images/portrait.jpg'
 }
 
 const socialMediaLinks = {
     github: "https://github.com/abhi07rana",
     linkedin: "https://www.linkedin.com/in/abhishekrana9756/",
-    // medium: "https://medium.com/@mimaishel",
+    medium: "",
     stackoverflow: "",
-    // xtwitter: "https://twitter.com/mimaishel"
+    xtwitter: "",
+    leetcode: "https://leetcode.com/ranaabhishek9756/",
+    codeforces: "https://codeforces.com/profile/iamhackerhurichan",
+    codingNinja: "https://www.naukri.com/code360/profile/abhi07rana"
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Abhishek Rana, a Computer Science student at Graphic Era University, deeply passionate about coding and information technology. From childhood, I've been enthralled by programming languages like Python, Java, PHP, and Swift, specializing in web development with frameworks like Django . Alongside my tech pursuits, I find joy in adventure, cooking, and immersing myself in nature's beauty. Known for my responsible and organized problem-solving approach, I thrive both independently and in team settings, leveraging over three years of programming experience and a strong foundation in advanced mathematics.I eagerly embrace new challenges and projects, fueled by a relentless curiosity to learn and grow in the ever-evolving tech landscape."
+        "My name is Abhishek, and I'm a BTech Computer Science student at Graphic Era Hill University. I have a passion for solving complex problems and developing innovative software solutions. During my time at university, I’ve had the opportunity to work on various intriguing projects, honing my skills in both industry-grade software and advanced app development practices. I was also honored to be selected for the Amazon ML Summer School 2024, which further fueled my enthusiasm for machine learning and AI.,Nowadays, you can find me immersed in my coursework or working on my latest project to tackle the next big challenge"
     ], // Separated items are paragraphs
     techStack: [
+        "C++",
         "PHP",
-        "Python",
         "JavaScript",
+        "ReactJS",
         "Vue.js",
-        "MySQL",
+
     ],
-    photo1Link: "images/IMG_8772 Small.jpeg",
-    photo2Link: "images/IMG_8727.jpeg",
-    photo3Link: "images/IMG_8559 Large.jpeg"
+    photo1Link: "images/portrait1.jpeg",
+    photo2Link: "images/portrait2.jpeg",
+    photo3Link: "images/portrait3.jpeg"
 }
-
-// // --- 🛡️ Experience Section ---
-// const experiences = [
-//     {
-//         position: "Web Dev Intern",
-//         company: {
-//             name: "WolfTech",
-//             link: "https://tools.wolftech.ncsu.edu/support/index.php/WolfTech_Information_Technology"
-//         },
-//         duration: "Aug 2022 - Present",
-//         bulletPoints: [
-//             "Resolved issues and developed new tools within several university web applications (email automation, research discovery, educational resources, scheduling tools, and text-generative AI news sharing).",
-//             "Achieved 100+ github code contributions as an intern on the team.",
-//             "Currently rebuilding and modernizing the university digital sign manager and system."
-//         ],
-//         hashtags: [
-//             "Laravel",
-//             "PHP",
-//             "MySQL",
-//             "JS",
-//             "Vue.js",
-//             "HTML",
-//             "Tailwind"
-//         ]
-//     },
-//     {
-//         position: "Math Tutor",
-//         company: {
-//             name: "Mathnasium",
-//             link: "https://www.mathnasium.com"
-//         },
-//         duration: "Jan 2022 - Aug 2022",
-//         bulletPoints: [
-//             "Taught math to students elementary through high school covering topics from basic algebra to college-level calculus.",
-//             "Directed the trajectory of the student's learning plan and math topic evaluation to facilitate success in their school math class.",
-//             "Requested by many students and parents for routine weekly tutoring sessions in a system with a standard random weekly rotation."
-//         ],
-//         hashtags: [
-//             "Calc 1-2",
-//             "Algebra 1-3",
-//             "Discrete Math",
-//             "Statistics"
-//         ]
-//     }
-// ]
-
-// --- 💻 Work Section ---
 const works = [
+    
+
     {
+        projectName: "Map Chat Hub",
+        yearCompleted: "2024",
+        description: "Objective:Map Chat is a real-time web application that integrates geolocation and chat functionalities. Users can track their location on an interactive map, select and update their avatars, and engage in real-time chat with other users. The application features real-time updates, chat history, and notifications. It leverages technologies such as Leaflet for mapping, Socket.io for real-time communication, and standard web technologies for frontend development",
+        techStack: " HTML, CSS, JavaScript, Node.js, Socket.io, Leaflet",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/abhi07rana/mapchathub"
+            },
+            {
+                label: "",
+                type: "external",
+                url: "https://mapchathub-abhishek.onrender.com/"
+            }
+        ],
+        imageLink: "images/a.png",
+        alignLeft: true
+    }
+    ,{
         projectName: "MULTIPLE-DISEASE-PREDICTION-SYSTEM",
         yearCompleted: "2023",
         description: "Objective:Developed a web-based multiple disease prediction system.       Role: Led the development, implemented machine learning models, and integrated them into a Streamlit application. Also responsible for data preprocessing, model training, and deployment.Outcome:Successfully built a user-friendly interface allowing users to input health data for predicting diseases including diabetes, heart disease, Parkinson's disease, and COVID-19. The application provides accurate predictions based on input data, helping users assess their health risks conveniently.",
@@ -118,27 +97,34 @@ const works = [
             {
                 label: "",
                 type: "external",
-                url: "https://abhi07rana.github.io/MULTIPLE-DISEASE-PREDICTION-SYSTEM/"
+                url: "https://abhi07rana-advanced-diagnostic-tool-app-fj8rvr.streamlit.app/"
             }
         ],
         imageLink: "images/Screenshot 2024-03-30 at 12.17.31 PM.png",
         alignLeft: false
-    },
-    {
-        projectName: "Portfolio Website",
+    },{
+        projectName: "Personal Portfolio Website",
         yearCompleted: "2023",
-        description: "Developed a personal portfolio website with Python backend using the Django web development framework. Incorporated HTML, CSS, and JavaScript to construct the frontend of the website.",
-        techStack: " HTML, CSS, JS",
+        description: "Designed and developed an  single page application template to help web developers create visually appealing personal portfolios, focusing on ease of use and customization. Built with Vue.js, JS, HTML, Tailwind CSS.",
+        techStack: "Vue.js, JS, HTML, Tailwind.css",
         links: [
             {
                 label: "",
+                type: "git",
+                url: "https://github.com/feifyKike/webdev_portfolio"
+            },
+            {
+                label: "",
                 type: "external",
-                url: "https://maximshelepov.com"
+                url: "https://feifykike.github.io/webdev_portfolio"
             }
         ],
-        imageLink: "images/Screenshot 2024-03-30 at 12.33.41 PM.png",
+        imageLink: "images/b.png",
         alignLeft: true
-    },
+    }
+    
+    ,
+
     {
         projectName: "GEIMS blood donation portal",
         yearCompleted: "2023",
@@ -208,7 +194,7 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking web and software development positions/internships for summer 2024.",
+            "Currently seeking web and software development positions/internships .",
             "Also looking to build a team for projects & startup ideas or just make professional connections."
         ], // paragraph breaks will be entered after each item,
         link: {
